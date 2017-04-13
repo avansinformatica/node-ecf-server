@@ -1,0 +1,25 @@
+{
+  "name": "node-myfirstrestfulserver",
+  "version": "0.1.2",
+  "description": "Een nodejs server",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "morgan": "^1.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avansinformatica/node-myfirstrestfulserver"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}
