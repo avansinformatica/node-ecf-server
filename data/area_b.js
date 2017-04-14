@@ -29,24 +29,25 @@ var proficiency_B_1_3 = {
 }	
 
 
-
-
-
-
 var dimensionB2 = { 
 	"level": 2,
-	"competence": "Service Level Management",
-	"description": "Defines, validates and makes applicable service level agreements (SLAs) and underpinning contracts for services offered. Negotiates service performance levels taking into account the needs and capacity of stakeholders and business. "
+	"competence": "Component Integration",
+	"description": "Nog invullen"
+}
+
+var proficiency_B_2_2 = { 
+	"level": 2,
+	"description": "Nog invullen",
 }
 
 var proficiency_B_2_3 = { 
 	"level": 3,
-	"description": "Ensures the content of the SLA.",
+	"description": "Nog invullen",
 }
 
 var proficiency_B_2_4 = { 
 	"level": 4,
-	"description" : "Negotiates revision of SLAs, in accordance with the overall objectives. Ensures the achievement of planned results."
+	"description" : "Nog invullen"
 }
 
 // We moeten een 'diepe copy' van area_b_description hebben, anders
@@ -58,7 +59,7 @@ area_b.dimensions = [
         proficiency: [ proficiency_B_1_1, proficiency_B_1_2, proficiency_B_1_3]
     },{
         dimension: dimensionB2,
-        proficiency: [ proficiency_B_2_3, proficiency_B_2_4]
+        proficiency: [ proficiency_B_2_2, proficiency_B_2_3, proficiency_B_2_4]
     }]
 
 //
@@ -104,7 +105,15 @@ app.get('/2', function(request, response){
     response.json({
 		description: area_b_description,
 		dimension: dimensionB2,
-		proficiency: [ proficiency_B_2_3, proficiency_B_2_4]
+		proficiency: [ proficiency_B_2_2, proficiency_B_2_3, proficiency_B_2_4]
+	});
+});
+
+app.get('/2/2', function(request, response){
+    response.json({
+		description: area_b_description,
+		dimension: dimensionB2,
+		proficiency: proficiency_B_2_2
 	});
 });
 
