@@ -1,7 +1,13 @@
 var express = require('express');
-var app = express();
+// Cors zorgt dat we vanaf een andere host naar deze server mogen praten
+var cors = require('cors');
 var area_a = require('./data/area_a');
 var area_b = require('./data/area_b');
+
+var app = express();
+
+// cross origin resource sharing
+app.use(cors());
 
 app.set('port', (process.env.PORT || 3000));
 
