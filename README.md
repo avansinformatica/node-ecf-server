@@ -1,5 +1,5 @@
 # node-ecf-server
-Dit is een kleine Nodejs sever. De server draait op [Heroku](http://node-myfirstrestfulserver.herokuapp.com/).
+Dit is een kleine Nodejs sever. De server draait op [Heroku](https://e-cf-server.herokuapp.com/).
 
 ## Gebruik
 Clone deze repo naar een directory op je eigen laptop. Je kunt de server lokaal starten:
@@ -12,6 +12,7 @@ npm start
 
 ## API
 De server biedt een aantal *API endpoints*
-- [/api/hello](http://node-myfirstrestfulserver.herokuapp.com/api/hello)
-- [/api/jsonresult](http://node-myfirstrestfulserver.herokuapp.com/api/jsonresult)
-- [/api/output?first_name=jouw%20voornaam&last_name=jouw%20achternaam](http://node-myfirstrestfulserver.herokuapp.com/api/output?first_name=jouw%20voornaam&last_name=jouw%20achternaam)
+- [/api](https://e-cf-server.herokuapp.com/api)
+- [/api/b](https://e-cf-server.herokuapp.com/api/b)
+- [/api/b/2](https://e-cf-server.herokuapp.com/api/b/2)
+- [/api/b/2/3](https://e-cf-server.herokuapp.com/api/b/2/3)
