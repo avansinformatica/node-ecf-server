@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
 var area_a = require('./data/area_a');
+var area_b = require('./data/area_b');
 
 app.set('port', (process.env.PORT || 3000));
 
 var allAreas = [ 
 	area_a.info, 
-	"item2" 
+	area_b.info 
 ];
 
 app.get(['/', '/api'], function(request, response) {
@@ -15,6 +16,7 @@ app.get(['/', '/api'], function(request, response) {
 
 // configureer de routes
 app.use('/api/a', area_a.routes);
+app.use('/api/b', area_b.routes);
 
 //
 // start the server

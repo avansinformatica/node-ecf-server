@@ -39,6 +39,8 @@ var proficiency_A_2_4 = {
 	"description" : "Negotiates revision of SLAs, in accordance with the overall objectives. Ensures the achievement of planned results."
 }
 
+// We moeten een 'diepe copy' van area_a_description hebben, anders
+// passen we het oorspronkelijke object aan. 
 var area_a = JSON.parse(JSON.stringify(area_a_description));
 area_a.dimensions = [
     {
@@ -118,6 +120,3 @@ module.exports = {
     routes: app,
     info: area_a
 };
-
-
-
